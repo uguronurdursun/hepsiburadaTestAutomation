@@ -67,8 +67,8 @@ public class CartPage extends TestBase {
         testUtils.waitUntilElementVisible(deleteButtons.get(0));
         deleteButtons.get(0).click();
         testUtils.waitUntilElementVisible(deletedProductNotificationText);
-        testUtils.waitUntilJSComplete();
         deletedProductNotificationCloseButton.click();
+        testUtils.waitUntilJSComplete();
         testUtils.waitUntilElementVisible(deleteButtons.get(0));
         deleteButtons.get(0).click();
         testUtils.waitUntilElementVisible(deletedProductNotificationText);
